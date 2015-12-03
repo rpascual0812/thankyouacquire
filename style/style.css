@@ -66,7 +66,18 @@ a:active {
 
 .big {
 	display: block;
-	font-size: 45px;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+	text-shadow: 
+		2px 2px 0 transparent,
+		4px 4px 0 #101010;
+}
+
+.extra-big {
+	display: block;
+	font-size: 50px;
 	font-weight: bold;
 	line-height: 1.3em;
 	margin-bottom: 10px;
@@ -149,26 +160,26 @@ nav a:hover {
 
 .description {
 	top: 740px;
-	left: 180px;
-	width: 440px;
+	left: 10px;
+	width: 840px;
 }
 
 .syntax {
 	top: 1510px;
-	left: 430px;
-	width: 400px;
+	left: 30px;
+	width: 1000px;
 }
 
 .scrollbar {
-	top: 1540px;
-	left: 1600px;
-	width: 400px;
+	top: 1340px;
+	left: 1500px;
+	width: 1000px;
 }
 
 .rotations {
-	left: 2185px;
-	top: 660px;
-	width: 460px;
+	left: 1885px;
+	top: 350px;
+	width: 860px;
 	transform: rotate(-90deg) translateY(2.5em);
 }
 
@@ -179,14 +190,21 @@ nav a:hover {
 }
 
 .source {
-	left: 2200px;
+	left: 2100px;
+	top: -800px;
+	width: 1000px;
+	transform: rotate(90deg) translateX(50px);
+}
+
+.eight {
+	left: 2500px;
 	top: -800px;
 	width: 400px;
 	transform: rotate(90deg) translateX(50px);
 }
 
 .follow {
-	width: 475px;
+	width: 575px;
 	left: 1100px;
 	top: -950px;
 	transform: rotate(90deg) translateX(50px);
@@ -213,4 +231,9 @@ nav a:hover {
 	to {
 		background: lightblue;
 	}
+}
+
+.blue-color {
+	color: #0db4de;
+	font-weight: bold;
 }

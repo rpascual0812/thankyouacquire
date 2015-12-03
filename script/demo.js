@@ -1,13 +1,15 @@
 $(document).ready(init);
 
 function init() {
+	var audio = new Audio('assets/thankyouthankyouforthelove.mp3');
+	//audio.play();
 	/* ========== DRAWING THE PATH AND INITIATING THE PLUGIN ============= */
 
 	$.fn.scrollPath("getPath")
 		// Move to 'start' element
 		.moveTo(400, 50, {name: "start"})
 		// Line to 'description' element
-		.lineTo(400, 800, {name: "description"})
+		.lineTo(400, 1000, {name: "description"})
 		// Arc down and line to 'syntax'
 		.arc(200, 1200, 400, -Math.PI/2, Math.PI/2, true)
 		.lineTo(600, 1600, {
@@ -37,11 +39,20 @@ function init() {
 		.lineTo(2400, -700, {
 			name: "source"
 		})
+
+		.arc(2250, -700, 150, 0, -Math.PI/2, true)
+
+		.lineTo(2600, -700, {
+			name: "eight"
+		})
 		// Small arc downwards
 		.arc(2250, -700, 150, 0, -Math.PI/2, true)
 
 		//Line to 'follow'
 		.lineTo(1350, -850, {
+			callback: function() {
+				audio.play();
+			},
 			name: "follow"
 		})
 		// Arc and rotate back to the beginning.
